@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kan-Ban Board</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <!-- To Do board -->
+      <div id="todo-board" class="board">
+        <div class="board-header">
+          <h2>To Do</h2>
+          <div class="board-header-util">
+            <span class="board-task-count">00</span>
+            <span class="fa-solid fa-pen-to-square"></span>
+            <span class="fa-solid fa-trash"></span>
+          </div>
+        </div>
+        <div class="task-list">
+          <div draggable="true" class="board-item">
+            <span class="task-text">Learn backend</span>
+            <div class="task-util">
+              <span class="edit-task fa-solid fa-pen-to-square"> </span>
+              <span class="delete-task fa-solid fa-trash"> </span>
+            </div>
+          </div>
+          <div draggable="true" class="board-item">
+            <span class="task-text">Learn node</span>
+            <div class="task-util">
+              <span class="edit-task fa-solid fa-pen-to-square"> </span>
+              <span class="delete-task fa-solid fa-trash"> </span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- inprogress board -->
+      <div id="inprogress-board" class="board">
+        <div class="board-header">
+          <h2>In Progress</h2>
+          <div class="board-header-util">
+            <span class="board-task-count">00</span>
+            <span class="fa-solid fa-pen-to-square"></span>
+            <span class="fa-solid fa-trash"></span>
+          </div>
+        </div>
+        <div class="task-list">
+          <div draggable="true" class="board-item">
+            <span class="task-text">Learn programming</span>
+            <div class="task-util">
+              <span class="edit-task fa-solid fa-pen-to-square"> </span>
+              <span class="delete-task fa-solid fa-trash"> </span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- done board -->
+      <div id="done-board" class="board">
+        <div class="board-header">
+          <h2>Done</h2>
+          <div class="board-header-util">
+            <span class="board-task-count">00</span>
+            <span class="fa-solid fa-pen-to-square"></span>
+            <span class="fa-solid fa-trash"></span>
+          </div>
+        </div>
+        <div class="task-list">
+          <div draggable="true" class="board-item">
+            <span class="task-text">Learn JS</span>
+            <div class="task-util">
+              <span class="edit-task fa-solid fa-pen-to-square"> </span>
+              <span class="delete-task fa-solid fa-trash"> </span>
+            </div>
+          </div>
+          <div draggable="true" class="board-item">
+            <span class="task-text">Learn ML</span>
+            <div class="task-util">
+              <span class="edit-task fa-solid fa-pen-to-square"> </span>
+              <span class="delete-task fa-solid fa-trash"> </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <button class="add-task-btn">Add Task</button>
+    <button class="add-board-btn">Add Board</button>
+  </body>
+  <script src="script.js"></script>
+  <script
+    src="https://kit.fontawesome.com/4c50c2b5f9.js"
+    crossorigin="anonymous"
+  ></script>
+</html>
